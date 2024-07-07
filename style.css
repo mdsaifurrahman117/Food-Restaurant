@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+            --primary-text-color: #fff;
+            --second-text-color: #101010;
+            --button-bg: #52C303;
+            --card-title-bg: #52C303; 
+}
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+}
+h1, h2, h3 {
+            font-family: "Work Sans", sans-serif;
+            font-weight: 700;
+}
+h4, h5, h6 {
+            font-family: "Work Sans", sans-serif;
+            font-weight: 600;
+            margin-bottom: 0;
+}
+a {
+            text-decoration: none;
+            font-family: "Work Sans", sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+}
+p {
+            font-family: "Work Sans", sans-serif;
+            font-weight: 400;
+}
+img {
+            width: 100%;
+}
+ul li {
+            list-style: none;
+            font-family: "Work Sans", sans-serif;
+            font-weight: 400;
+}
+button {
+            background: none;
+            border: none;
+            font-family: "Work Sans", sans-serif;
+            font-weight: 600;
+}
+section {
+            margin: 100px 0px;
+}
+
+/* main/hero section style start */
+main {
+            background: linear-gradient(transparent, #101010 ), url("assets/hero-bg.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+}
+.subtitle h3 {
+            color: var(--primary-text-color);
+            text-align: center;
+            font-size: 2rem;
+            opacity: 0.7;
+}
+.main-title {
+            max-width: 1000px;
+            margin: auto;
+}
+.main-title h1 {
+            color: var(--primary-text-color);
+            text-align: center;
+            font-size: 4rem;
+            line-height: 80px;
+}
+.main-desc {
+            max-width: 1000px;
+            margin: auto;
+}
+.main-desc p {
+            color: var(--primary-text-color);
+            text-align: center;
+            font-size: 18px;
+            line-height: 28px;
+            opacity: 0.5;
+}
+.main-button {
+            width: 282px;
+            margin: auto;
+            text-align: center;
+}
+.main-button button {
+            color: var(--primary-text-color);
+            background-color: var(--button-bg);
+            text-align: center;
+            padding: 20px 32px;
+            border-radius: 8px;
+}
+
+/* media query for main/hero section */
+@media (max-width: 768px) {
+            .subtitle h3 {
+                        font-size: 1.5rem;
+            }
+            .main-title h1 {
+                        font-size: 2.5rem;
+                        line-height: 50px;
+            }
+
+}
+
+/* about section style start */
+.about-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+}
+.about-desc {
+            text-align: center;
+}
+.about-title h2 {
+            font-size: 2.5rem;
+}
+.about-subtitle p {
+            font-size: 18px;
+}
+.follow-us-title {
+            border-top: 1px solid #10101075;
+            border-bottom: 1px solid #10101075;
+            padding: 15px 0px;
+}
+.social-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            margin-top: 32px;
+}
+.social-icon img {
+            max-width: 25px;
+}
+/* media query for about section */
+@media (max-width: 768px) {
+            .about-content {
+                        flex-direction: column;
+            }
+            .about-title h2 {
+                        font-size: 1.5rem;
+            }
+}
+
+/* brand section design start */
+.brand-title {
+            text-align: center;
+}
+.brand-title h4 {
+            opacity: 0.5;
+            margin-bottom: 20px;
+}
+.brand-title h1 {
+            max-width: 691px;
+            margin: auto;
+            font-size: 3rem;
+            padding-bottom: 48px;
+}
+.card-container {
+            display: flex;
+            gap: 24px;
+}
+.card {
+            max-width: 424px;
+            margin: auto;
+            border: none;
+}
+.card-image {
+            max-width: 424px;
+            margin: auto;
+}
+.brand-name {
+            background-color: #53c30325;
+            padding: 14px 32px;
+            max-width: 181px;
+            border-radius: 8px;
+            margin: 20px auto;
+}
+.brand-name p {
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+            color: var(--second-text-color);
+            margin-bottom: 0;
+}
+.card-title {
+            text-align: center;
+}
+.card-desc {
+            text-align: center;
+}
+/* media query for brand section */
+@media (max-width: 786px) {
+            .brand-title h1 {
+                        font-size: 2rem;
+            }
+            .card-container {
+                        flex-direction: column;
+                        gap: 30px;
+            }
+            .card {
+                        max-width: 300px;
+            }
+}
+
+footer {
+            padding: 10px 0px;
+            text-align: center;
+}
